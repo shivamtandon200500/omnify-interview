@@ -34,6 +34,7 @@ const Home = () => {
     const userLogin = (e) => {
         console.log('inside userLogin');
         e.preventDefault();
+        if(name&&description&&startTime&&endTime&&startDate&&dayOfWeek){
         var mili = moment(startDate).valueOf(); 
         const data = new FormData();
         data.append("Name",name);
@@ -53,6 +54,9 @@ const Home = () => {
         console.log(user)
         
         navigate("/calender")
+    }else{
+        alert("Please fill the form");
+    }
     }
 
     if (event.loading) {
