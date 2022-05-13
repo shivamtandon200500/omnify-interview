@@ -1,0 +1,23 @@
+.linkButtonGroup{
+    display: flex;
+    align-items: center;
+    width: 15%;
+    justify-content: space-between;
+}
+.linkButtons{
+    text-decoration: none;
+    color:rgba(255,255,255,.55);
+}
+.linkButtons:hover{
+    color: #fff;
+}
+.NavHome{
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.NavHome:hover
+{
+    color: #fff;
+}
